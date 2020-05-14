@@ -356,12 +356,12 @@ contract ERC20Burnable is ERC20 {
     }
 }
 
-// File: contracts/FTT.sol
+// File: contracts/OPO.sol
 
 pragma solidity ^0.5.0;
 
 contract OPO is ERC20, ERC20Detailed, ERC20Burnable {
-    constructor() ERC20Detailed('OPO', 'Opoly Token', 18) public {
-        _mint(msg.sender, 100_000_000 * 10 ** 18);
+    constructor() ERC20Detailed('Opoly Token', 'OPO', 18) public {
+        _mint(msg.sender, 1000_000_000 * 10 ** 18);
     }
 }
